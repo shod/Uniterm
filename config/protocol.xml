@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root>
+	<objtypes>
+		<objtype name="TEM05M" len="49" cmd="" mode="auto">
+			<col name="" index="1" pos="00" len="2" com=""  desc="Номер прибора"></col>			
+			<col name="" index="2" pos="02" len="1" com="" desc="Номер версии ПО"></col>
+			<col name="" index="3" pos="03" len="1" com="" desc="Схема установки"></col>
+			<col name="DR1" index="4" pos="04" len="1" com="" desc="Код диаметра и расхода 1-го канала"></col>
+			<col name="DR2" index="5" pos="05" len="1" com="" desc="Код диаметра и расхода 2-го канала"></col>
+			<col name="" index="6" pos="06" len="1" com="" desc="Процент минимального расхода 1-го и 2-го каналов"></col>
+			<col name="" index="7" pos="07" len="1" com="" desc="Программируемая температура Т3"></col>
+			<col name="" index="8" pos="08" len="1" com="" desc="Минуты времени наработки"></col>
+			<col name="" index="9" pos="09" len="3" com="" desc="Часы времени наработки"></col>
+			<col name="RK1" index="10" pos="0C" len="3" com="1" desc="Расход по первому каналу"></col>
+			<col name="KB1" index="11" pos="0F" len="3" com="1" desc="Мощность по первому каналу, кВт"></col>
+			<col name="EM1" index="12" pos="12" len="3" com="1" desc="Энергия по первому каналу, МВтхч"></col>
+			<col name="VK1" index="10" pos="15" len="3" com="1" desc="Объем по первому каналу, м^3"></col>			
+			<col name="MKP1" index="10" pos="18" len="3" com="1" desc="Масса по первому каналу, т"></col>			
+			<col name="RK2" index="10" pos="1B" len="3" com="2" desc="Расход по второму каналу, m^3/ч"></col>		
+			<col name="KB2" index="10" pos="1E" len="3" com="2" desc="Мощность по второму каналу, кВт"></col>			
+			<col name="EM2" index="10" pos="21" len="3" com="2" desc="Энергия по второму каналу, МВтхч"></col>			
+			<col name="VK2" index="10" pos="24" len="3" com="2" desc="Объем по второму каналу, м^3"></col>			
+			<col name="MKP2" index="10" pos="27" len="3" com="2" desc="Масса по второму, т"></col>			
+			<col name="ERR" index="10" pos="2A" len="1" com="" desc="Байт ошибок"></col>			
+			<col name="TPD" index="10" pos="2B" len="2" com="1" desc="Температура на подаче, С"></col>			
+			<col name="TOB" index="10" pos="2D" len="2" com="1" desc="Температура на обратке, С"></col>
+			<col name="TVD" index="10" pos="2F" len="2" com="1" desc="Температура холодной воды, С"></col>
+		</objtype>
+		<objtype name="IMP01" len="4">
+			<col name="TVD" index="10" pos="2F" len="2" com="1" desc="Температура холодной воды, С"></col>
+			<col name="WTR" index="-2" pos="05" len="1" com="5" desc="Вода"></col>
+		</objtype>
+		<objtype name="SPT961" len="4" cmd="18;0.65532" index="1" mode="auto">
+			<col name="TVD" index="1" pos="1" len="10" com="" desc="Температура холодной воды, С"></col>
+			<col name="PH1" index="2" pos="2" len="12" com="" desc="Давление холодной воды, МПа"></col>
+			<col name="TPD" index="3" pos="3" len="2" com="" desc="Температура горячей воды, С"></col>
+			<col name="THD" index="4" pos="4" len="2" com="" desc="Давление горячей воды, МПа"></col>
+			<col name="TPD" index="5" pos="5" len="2" com="" desc="M(c)t1"></col>
+			<col name="TPD" index="6" pos="6" len="2" com="" desc="W(c)t1.ГДж"></col>
+			<col name="TPD" index="7" pos="7" len="2" com="" desc="tи(с)"></col>
+			<col name="TPD" index="8" pos="8" len="2" com="" desc="V(c)t1"></col>
+			<col name="TPD" index="9" pos="9" len="2" com="" desc=""></col>
+			<cmd1 value="8D0AAF3F218D0A1001101F1D10020930093030330C1003C515"/>
+			<cmd1 value="1001101f1d10020930093030330c1003c515"/>
+		</objtype>
+		<objtype name="SPT961" len="4" cmd="18;0.65532" index="2" mode="report">
+			<col name="TVD" index="1" pos="1" len="10" com="" desc="Температура холодной воды, С"></col>
+			<col name="PH1" index="2" pos="2" len="12" com="" desc="Давление холодной воды, МПа"></col>
+			<col name="TPD" index="3" pos="3" len="2" com="" desc="Температура горячей воды, С"></col>
+			<col name="THD" index="4" pos="4" len="2" com="" desc="Давление горячей воды, МПа"></col>
+			<col name="TPD" index="5" pos="5" len="2" com="" desc="M(c)t1"></col>
+			<col name="TPD" index="6" pos="6" len="2" com="" desc="W(c)t1.ГДж"></col>
+			<col name="TPD" index="7" pos="7" len="2" com="" desc="tи(с)"></col>
+			<col name="TPD" index="8" pos="8" len="2" com="" desc="V(c)t1"></col>
+			<col name="TPD" index="9" pos="9" len="2" com="" desc=""></col>
+			<cmd1 value="8D0AAF3F218D0A1001101F1D10020930093030330C1003C515"/>
+			<cmd1 value="1001101f1d10020930093030330c1003c515"/>
+			<objtype name="TEM104" len="4" cmd="" index="0" mode="auto">
+			<col name="TVD" index="1" pos="1" len="10" com="" desc="Температура холодной воды, С"></col>
+			<col name="PH1" index="2" pos="2" len="12" com="" desc="Давление холодной воды, МПа"></col>
+			<col name="TPD" index="3" pos="3" len="2" com="" desc="Температура горячей воды, С"></col>
+			<col name="THD" index="4" pos="4" len="2" com="" desc="Давление горячей воды, МПа"></col>
+			<col name="TPD" index="5" pos="5" len="2" com="" desc="M(c)t1"></col>
+			<col name="TPD" index="6" pos="6" len="2" com="" desc="W(c)t1.ГДж"></col>
+			<col name="TPD" index="7" pos="7" len="2" com="" desc="tи(с)"></col>
+			<col name="TPD" index="8" pos="8" len="2" com="" desc="V(c)t1"></col>
+			<col name="TPD" index="9" pos="9" len="2" com="" desc=""></col>
+			<cmd value="5500FF000000AB"/>
+			<cmd1 value="1001101f1d10020930093030330c1003c515"/>
+		</objtype>
+		<objtype name="TEM104" len="4" cmd="" index="0" mode="auto">
+			<col name="TVD" index="1" pos="1" len="10" com="" desc="Температура холодной воды, С"></col>
+			<col name="PH1" index="2" pos="2" len="12" com="" desc="Давление холодной воды, МПа"></col>
+			<col name="TPD" index="3" pos="3" len="2" com="" desc="Температура горячей воды, С"></col>
+			<col name="THD" index="4" pos="4" len="2" com="" desc="Давление горячей воды, МПа"></col>
+			<col name="TPD" index="5" pos="5" len="2" com="" desc="M(c)t1"></col>
+			<col name="TPD" index="6" pos="6" len="2" com="" desc="W(c)t1.ГДж"></col>
+			<col name="TPD" index="7" pos="7" len="2" com="" desc="tи(с)"></col>
+			<col name="TPD" index="8" pos="8" len="2" com="" desc="V(c)t1"></col>
+			<col name="TPD" index="9" pos="9" len="2" com="" desc=""></col>
+			<cmd value="5500FF000000AB"/>
+			<cmd1 value="1001101f1d10020930093030330c1003c515"/>
+		</objtype>
+		</objtype>
+	</objtypes>
+	<objects>
+		<obj1 index="100" type="TEM05M"></obj1>
+		<obj1 index="200" type="IMP01"></obj1>
+		<obj index="1" type="SPT961"></obj>
+		<obj index="2" type="TEM104"></obj>
+	</objects>
+</root>

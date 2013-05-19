@@ -1,0 +1,12 @@
+ѕравильные установки порта дл€ работы с SPT
+{
+    UniTerm.Sys.Config config1 = new UniTerm.Sys.Config();
+    this.comport.BaudRate = 4800;
+    this.comport.DataBits = 8;
+    this.comport.StopBits = System.IO.Ports.StopBits.One;
+    this.comport.Parity = System.IO.Ports.Parity.None;
+    this.comport.PortName = config1.getappSettings((.SettingField)(3).ToString());
+    this.comport.RtsEnable = true;
+    this.comport.DtrEnable = true;
+    this.comport.Open();
+}

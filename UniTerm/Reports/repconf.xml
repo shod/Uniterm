@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root>
+	<reports>
+		<report name="Отчет за день" code="ReportDay" obj="SPT961" index="2" form="dat1"/>
+		<report name="Отчет за месяц" code="ReportMonth" obj="SPT961" index="3" form="dat2"/>
+	</reports>
+	<forms>
+		<form name="dat1">
+			<param name="День" code="from" type="date" value="startdate"/>
+		</form>
+		<form name="dat2">
+			<param name="Начало" code="from" type="date" value="datestart"/>
+			<param name="Конец" code="to" type="date" value="dateend"/>
+		</form>
+	</forms>
+</root>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
